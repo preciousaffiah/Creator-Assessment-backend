@@ -529,8 +529,8 @@ app.get('/wallet/transactions', authenticateToken, async (req, res) => {
             mode: tx.mode,
             status: tx.status,
             description: tx.description,
-            counterpart_wallet_id: tx.counterpart_wallet_id, // Fixed: was counterpart_wallet
-            counterpart_user_name: tx.counterpart_user_name, // Added: the user name
+            counterpart_wallet_id: tx.counterpart_wallet_id, 
+            counterpart_user_name: tx.counterpart_user_name, 
             chargebee_invoice_id: tx.chargebee_invoice_id,
             chargebee_reference_id: tx.chargebee_reference_id,
             created_at: tx.created_at
