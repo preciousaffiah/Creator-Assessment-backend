@@ -620,7 +620,7 @@ app.post('/wallet/send', authenticateToken, async (req, res) => {
     if (recipientLookup.rows.length === 0) {
       return res.status(404).json({
         success: false,
-        message: 'Recipient not found. Please check the username/email.',
+        message: 'Recipient not found. Please check the username.',
         code: 'RECIPIENT_NOT_FOUND'
       });
     }
